@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio - Guilherme Crivelaro Serafim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        
+        <a class="navbar-brand" href="#">Site</a>
+        
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex mx-auto">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+           
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projeto">Projeto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-bell"></i> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+   <main class="container mt-5">
+    <div class="row">
+        <aside class="col-md-4 text-start">
+            <img src="img/img-port" alt="Foto de Guilherme" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+            <h1 class="fw-bold">Guilherme Crivelaro Serafim</h1>
+            <h2 class="text-muted">Análise e Desenvolvimento de Sistemas</h2>
+            <section id="contato" class="mt-4">
+                <h2 class="section-title">Contato</h2>
+                <p><strong>Localização:</strong> Maringá/PR</p>
+                <p><strong>E-mail:</strong> <a href="mailto:crivelarogui@gmail.com" class="text-decoration-none">crivelarogui@gmail.com</a></p>
+                <p><strong>Telefone:</strong> <a href="tel:+55119932242552" class="text-decoration-none">(11) 9 93224-2552</a></p>
+            </section>
+        </aside>
+        
+        <section class="col-md-8">
+            <section id="sobre" class="mb-5">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p>Olá! Meu nome é Guilherme e gosto de tecnologia e desenvolvimento backend. Sempre gostei de desafios e de aprender coisas novas, o que me levou a explorar diferentes áreas da programação.
+                Além da programação, gosto de academia, pois acredito que a disciplina e a persistência são essenciais tanto no treino quanto na vida profissional.</p>
+            </section>
+            
+            <section id="projeto" class="mb-5">
+                <h2 class="section-title">Projetos</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Portfólio Pessoal</h5>
+                                <p class="card-text"><strong>Data:</strong> 14/03/2025</p>
+                                <p class="card-text"><strong>Descrição:</strong> Criação de um Portfólio Pessoal utilizando apenas HTML e CSS.</p>
+                                <button class="btn btn-outline-danger like-button">
+                                    <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</main>
+
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <p>&copy; 2025 Guilherme Crivelaro Serafim. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll(".like-button").forEach(button => {
+        button.addEventListener("click", function() {
+            let heartIcon = this.querySelector("i");
+            heartIcon.classList.toggle("bi-heart");
+            heartIcon.classList.toggle("bi-heart-fill");
+        });
+    });
+</script>
+</body>
+</html>
